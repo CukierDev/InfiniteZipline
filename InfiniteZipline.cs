@@ -1,4 +1,5 @@
 ﻿using SonsSdk;
+using SUI;
 
 namespace InfiniteZipline;
 
@@ -14,7 +15,7 @@ public class InfiniteZipline : SonsMod
         //OnGUICallback = MyGUIMethod;
 
         // Uncomment this to automatically apply harmony patches in your assembly.
-        //HarmonyPatchAll = true;
+        HarmonyPatchAll = true;
     }
 
     protected override void OnInitializeMod()
@@ -27,10 +28,10 @@ public class InfiniteZipline : SonsMod
     {
         // Do your mod initialization which involves game or sdk references here
         // This is for stuff like UI creation, event registration etc.
-        InfiniteZiplineUi.Create();
+        // InfiniteZiplineUi.Create();
 
         // Add in-game settings ui for your mod.
-        // SettingsRegistry.CreateSettings(this, null, typeof(Config));
+        SettingsRegistry.CreateSettings(this, null, typeof(Config));
     }
 
     protected override void OnGameStart()
