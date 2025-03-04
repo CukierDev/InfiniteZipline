@@ -1,3 +1,3 @@
 # InfiniteZipline
 
-A simple mod that allows for infinite ziplines build for RedLoader
+A simple mod that allows for infinite ziplines, built for [RedLoader](https://github.com/ToniMacaroni/RedLoader)
